@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juadebfm - Best Frontend Designs</title>
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- 
     - favicon
   -->
@@ -105,17 +108,22 @@
         <section class="hero" id="home">
           <div class="container">
             <div class="hero-content">
-              <p class="hero-subtitle">Frontend Web Designer & Developer From Lagos, Nigeria</p>
+              <p class="hero-subtitle" data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">Frontend Web Designer & Developer From Lagos, Nigeria</p>
 
-              <h2 class="h2 hero-title">
+              <h2 class="h2 hero-title" data-aos="fade-up"
+              data-aos-duration="3000">
                 Simple And Engaging Design Interfaces That Users Love
               </h2>
 
-              <p class="hero-text">
+              <p class="hero-text" data-aos="fade-up"
+              data-aos-duration="3000">
                 5 years of IT experience and 2+ years of frontend web development.
               </p>
 
-              <button class="btn"> <a href="#services"> Learn More</a></button>
+              <button class="btn" data-aos="fade-up"
+              data-aos-duration="3000"> <a href="#services"> Learn More</a></button>
             </div>
 
             <figure class="hero-banner">
@@ -139,6 +147,9 @@
           <div class="container">
             <figure class="about-banner">
               <img
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
                 src="about-banner.png"
                 width="700"
                 height="532"
@@ -192,7 +203,9 @@
 
             <ul class="service-list">
               <li>
-                <div class="service-card">
+                <div class="service-card" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                   <div class="card-icon">
                     <ion-icon name="telescope-outline"></ion-icon>
                   </div>
@@ -210,7 +223,9 @@
               </li>
 
               <li>
-                <div class="service-card">
+                <div class="service-card" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                   <div class="card-icon">
                     <ion-icon name="desktop-outline"></ion-icon>
                   </div>
@@ -228,7 +243,9 @@
               </li>
 
               <li>
-                <div class="service-card">
+                <div class="service-card" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                   <div class="card-icon">
                     <ion-icon name="globe-outline"></ion-icon>
                   </div>
@@ -729,5 +746,9 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
