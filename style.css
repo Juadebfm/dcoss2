@@ -393,7 +393,7 @@ body {
 .hero-subtitle {
   color: var(--chrome-yellow);
   font-family: var(--ff-source-sans-pro);
-  font-size: var(--fs-7);
+  font-size: var(--fs-6);
   margin-block-end: 15px;
 }
 
@@ -407,6 +407,10 @@ body {
   color: var(--white);
   font-size: var(--fs-8);
   margin-block-end: 30px;
+}
+
+.hero-content button a {
+  color: var(--white);
 }
 
 /*-----------------------------------*\
@@ -779,7 +783,19 @@ body {
 /**
    * responsive for larger than 550px screen
    */
+   @media (min-width: 390px) {
 
+    .stats-list {
+      margin-top: 7rem;
+    }
+
+    .stats-card {
+      width: 65%;
+      height: auto;
+      margin: auto;
+    }
+   }
+   
 @media (min-width: 550px) {
   /**
      * REUSED STYLE
@@ -812,6 +828,9 @@ body {
   .stats-list {
     grid-template-columns: repeat(3, 1fr);
   }
+
+
+
 
   /**
      * BLOG
