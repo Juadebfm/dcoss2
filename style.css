@@ -649,7 +649,6 @@ body {
 
 
 /* CONTACT */
-
 .contact .container{
 	position: relative;
 	width: 100%;
@@ -667,13 +666,13 @@ body {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("img/bg.jpg") no-repeat center;
+	background: url("/contact.jpg") no-repeat center;
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
 }
 
-.contact .contact-box{
+.contact .container .contact-box {
 	max-width: 850px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -684,23 +683,23 @@ body {
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
 
-.contact .left{
-	background: url("img/bg.jpg") no-repeat center;
+.contact .container .contact-box .left{
+	background: url("/contact.jpg") no-repeat left;
 	background-size: cover;
 	height: 100%;
 }
 
-.contact .right{
+.contact .container .contact-box .right{
 	padding: 25px 40px;
 }
 
-.contact h2{
+.contact .container .contact-box .right h2{
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
 }
 
-.contact h2:after{
+.contact .container .contact-box .right h2:after{
 	content: '';
     position: absolute;
     left: 50%;
@@ -709,10 +708,10 @@ body {
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: #2ecc71;
+    background-color: var(--razzmatazz);
 }
 
-.contact .field{
+.contact .container .contact-box .right input{
 	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
@@ -723,18 +722,14 @@ body {
 	transition: .3s;
 }
 
-.contact .field:hover{
+.contact .container .contact-box .right input:hover{
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-.contact textarea{
-	min-height: 150px;
-}
-
-.contact .btn{
+.contact .container .contact-box .right button {
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
+	background-color: var(--winter-sky);
 	color: #fff;
 	font-size: 1.1rem;
 	border: none;
@@ -743,14 +738,15 @@ body {
 	transition: .3s;
 }
 
-.contact .btn:hover{
-    background-color: #27ae60;
+.contact .container .contact-box .right button:hover{
+    background-color: var(--winter-sky_50);
 }
 
-.contact .field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
+.contact .container .contact-box .right input:focus{
+    border: 1px solid var(--winter-sky);
     background-color: #fff;
 }
+
 
 @media screen and (max-width: 880px){
 	.contact .contact-box{
